@@ -81,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______, _______, _______, _______, _______, _______,                                     KC_PGUP, KC_HOME, KC_UP,   KC_END,  KC_VOLU, KC_DEL,
       _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,                                     KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_VOLD, KC_INS,
       _______, _______, _______, _______, _______, _______, _______, KC_SLCK, _______, _______,KC_PAUSE, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, KC_PSCR,
-                                 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
+                                 _______, _______, _______, _______, _______, _______, _______, NUMS, _______, _______
     ),
 
 /*
@@ -102,7 +102,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_GRV , LSFT(KC_COMM), LSFT(KC_DOT), KC_LBRC , KC_RBRC , _______ ,                        KC_AMPR , LSFT(KC_LBRC) , LSFT(KC_RBRC) , KC_MINS , KC_PLUS , LSFT(KC_QUOTE) ,
      KC_TILD , KC_EXLM,  KC_AT , KC_HASH,  KC_DLR, KC_PERC,                                     KC_PIPE, KC_EQL, KC_ASTR, KC_LPRN, KC_RPRN, KC_QUOTE,
      KC_LSFT , KC_BSLS, KC_COLN, KC_SCLN, KC_CIRC, _______, _______, _______, _______, _______, _______, KC_UNDS, KC_COMM,  KC_DOT, KC_SLSH, KC_QUES,
-                                 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
+                                 _______, _______, NUMS, _______, _______, _______, _______, _______, _______, _______
     ),
 
 /*
