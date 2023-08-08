@@ -13,6 +13,23 @@ The five different layers are the following:
 4. Function layer
 5. Adjust layer
 
+## Compiling and Flashing
+
+Instructions here: https://docs.qmk.fm/#/newbs_building_firmware
+
+QMK config looks like this:
+
+```
+user.keyboard=splitkb/kyria/rev1
+user.keymap=nathanKramer
+user.qmk_home=/Users/nathankramer/Projects/nathanKramer/qmk_firmware
+```
+
+1. Run `qmk compile`
+2. Open QMK Toolbox
+3. Tick auto flash
+4. Press reset button (it should flash at this stage)
+
 ## Base layer(s)
 ```
 Base Layer: -
