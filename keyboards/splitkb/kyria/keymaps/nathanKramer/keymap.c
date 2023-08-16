@@ -43,9 +43,9 @@ enum layers {
 // https://docs.qmk.fm/#/newbs_building_firmware
 
 enum {
-  M_RIGHT_ELM_ARROW = SAFE_RANGE,
-  M_LEFT_ELM_ARROW,
-  M_BIG_ARROW,
+    M_RIGHT_ELM_ARROW = SAFE_RANGE,
+    M_LEFT_ELM_ARROW,
+    M_BIG_ARROW,
 };
 
 /**
