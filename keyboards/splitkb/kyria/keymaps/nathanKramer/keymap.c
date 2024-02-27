@@ -20,6 +20,7 @@ enum layers {
     _NAV,
     _SYM,
     _NUMS,
+    _CAPS,
 };
 
 
@@ -29,6 +30,7 @@ enum layers {
 #define SYM      MO(_SYM)
 #define NAV      MO(_NAV)
 #define NUMS     MO(_NUMS)
+#define CAPS     MO(_CAPS)
 
 #define CTL_ESC  MT(MOD_LCTL, KC_ESC)
 #define CTL_QUOT MT(MOD_RCTL, KC_QUOTE)
@@ -124,7 +126,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * Sym Layer: Symbols
  *
  * ,-------------------------------------------.                              ,-------------------------------------------.
- * |    `   |  <   |  >   |  [   |  ]   |  <|  |                              |   &  |  {   |  }   |  -   |  +   |   "    |
+ * |    `   |  <   |  >   |  [   |  ]   |  <|  |                              |   &  |  {   |  }   |  -   |  +   |   Alt+ Bksp    |
  * |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
  * |    ~   |  !   |  @   |  #   |  $   |  %   |                              |   |  |  =   |  *   |  (   |  )   |   '    |
  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
@@ -135,7 +137,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                        `----------------------------------'  `----------------------------------'
  */
     [_SYM] = LAYOUT(
-     KC_GRV , LSFT(KC_COMM), LSFT(KC_DOT), KC_LBRC , KC_RBRC , M_LEFT_ELM_ARROW ,                        KC_AMPR , LSFT(KC_LBRC) , LSFT(KC_RBRC) , KC_MINS , KC_PLUS , LSFT(KC_QUOTE) ,
+     KC_GRV , LSFT(KC_COMM), LSFT(KC_DOT), KC_LBRC , KC_RBRC , M_LEFT_ELM_ARROW ,                        KC_AMPR , LSFT(KC_LBRC) , LSFT(KC_RBRC) , KC_MINS , KC_PLUS , LALT(KC_BSPC),
      KC_TILD , KC_EXLM,  KC_AT , KC_HASH,  KC_DLR, KC_PERC,                                     KC_PIPE, KC_EQL, KC_ASTR, KC_LPRN, KC_RPRN, KC_QUOTE,
      KC_LSFT , KC_BSLS, KC_COLN, KC_SCLN, KC_CIRC, M_RIGHT_ELM_ARROW, _______, _______, _______, _______, M_BIG_ARROW, KC_UNDS, KC_COMM,  KC_DOT, KC_SLSH, KC_QUES,
                                  _______, _______, NUMS, _______, _______, _______, _______, _______, _______, _______
