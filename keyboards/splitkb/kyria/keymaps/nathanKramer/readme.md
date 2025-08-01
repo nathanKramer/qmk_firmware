@@ -40,6 +40,7 @@ qmk config user.qmk_home=$HOME/Projects/nathanKramer/qmk_firmware
 1. Open QMK Toolbox
 1. Tick auto flash
 1. Press reset button (it should flash at this stage).
+1. You have to flash both sides of the keyboard.
 
 
 ## Base layer(s)
