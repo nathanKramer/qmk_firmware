@@ -34,8 +34,8 @@ qmk config user.qmk_home=$HOME/Projects/nathanKramer/qmk_firmware
 
 1. Install the QMK CLI: `brew install qmk/qmk/qmk`
 1. Install the QMK Toolbox
+1. Run `qmk setup` to prepare QMK dependencies.
 1. Set the config by running the above commands.
-1. Run `make git-submodule` to clone the QMK firmware submodules.
 1. Run `qmk compile` to compile the firmware.
 1. Open QMK Toolbox
 1. Tick auto flash
