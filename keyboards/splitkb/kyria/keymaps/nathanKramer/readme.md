@@ -25,10 +25,22 @@ user.keymap=nathanKramer
 user.qmk_home=/Users/nathankramer/Projects/nathanKramer/qmk_firmware
 ```
 
-1. Run `qmk compile`
-2. Open QMK Toolbox
-3. Tick auto flash
-4. Press reset button (it should flash at this stage)
+Set the config by running the following commands in the terminal:
+```
+qmk config user.keyboard=splitkb/kyria/rev1
+qmk config user.keymap=nathanKramer
+qmk config user.qmk_home=$HOME/Projects/nathanKramer/qmk_firmware
+```
+
+1. Install the QMK CLI: `brew install qmk/qmk/qmk`
+1. Install the QMK Toolbox
+1. Set the config by running the above commands.
+1. Run `make git-submodule` to clone the QMK firmware submodules.
+1. Run `qmk compile` to compile the firmware.
+1. Open QMK Toolbox
+1. Tick auto flash
+1. Press reset button (it should flash at this stage).
+
 
 ## Base layer(s)
 ```
